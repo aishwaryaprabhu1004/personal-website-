@@ -6,82 +6,164 @@
   <title>Aishwarya Prabhu - Resume</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      margin: 40px auto;
-      max-width: 850px;
-      line-height: 1.5;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
       color: #222;
+      background: #f9f9fb;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 26px;
-      font-weight: bold;
-      border-bottom: 2px solid #333;
-      padding-bottom: 6px;
-      margin-bottom: 12px;
+      font-size: 2.2rem;
+      margin-bottom: 5px;
     }
     h2 {
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-      margin-top: 22px;
-      margin-bottom: 8px;
-    }
-    .meta {
-      font-style: italic;
-      font-size: 13px;
-      color: #555;
-    }
-    ul {
-      margin: 6px 0 12px 18px;
-      font-size: 14px;
-    }
-    p, li {
-      font-size: 14px;
-      margin: 4px 0;
+      font-size: 1.4rem;
+      margin-top: 30px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
+      color: #003366;
     }
     h3 {
-      font-size: 15px;
-      margin: 8px 0 4px;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #333;
     }
-    @media print {
-      body { margin: 0; }
-      h1 { font-size: 22px; }
-      h2 { font-size: 16px; }
-      h3, p, li { font-size: 12px; }
+    p, li {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    ul {
+      margin: 8px 0 15px 20px;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    .summary {
+      background: #f0f4fa;
+      padding: 15px 20px;
+      border-left: 4px solid #003366;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+    .highlights ul {
+      list-style: '★ ';
+      padding-left: 18px;
+    }
+    .edu-item, .exp-item {
+      margin-bottom: 15px;
+    }
+    .role {
+      font-weight: bold;
+      color: #222;
+    }
+    .org {
+      color: #003366;
     }
   </style>
 </head>
 <body>
-  <h1>Aishwarya Prabhu</h1>
+  <div class="container">
+    <header>
+      <h1>Aishwarya Prabhu</h1>
+      <p><strong>Email:</strong> your.email@example.com | <strong>LinkedIn:</strong> linkedin.com/in/yourprofile | <strong>GitHub:</strong> github.com/yourprofile</p>
+    </header>
 
-  <h2>Education</h2>
-  <p><strong>MBA, Finance & Strategy</strong> – BITS School of Management (BITSoM), Mumbai <span class="meta">2024–2026</span></p>
-  <p><strong>B.Tech, Electrical & Electronics (Minor: CS)</strong> – PES University, Bangalore <span class="meta">2018–2022 | GPA: 8.04/10</span></p>
+    <section class="summary">
+      <h2>Professional Summary</h2>
+      <p>MBA candidate at BITSoM with a background in technology consulting and strategy. Experienced in digital transformation, market analysis, and AI-driven business solutions. Recognized for problem-solving, leadership, and delivering measurable business impact across consulting and corporate settings.</p>
+    </section>
 
-  <h2>Experience</h2>
-  <h3>PwC India – Associate, Technology Consulting <span class="meta">Jul 2022 – Apr 2024</span></h3>
-  <ul>
-    <li>Improved client HR processes and efficiency in Oracle HCM, impacting 200+ features.</li>
-    <li>Conducted trainings and enabled clients to independently manage learning modules.</li>
-    <li>Supported business development through research on 200+ prospective clients and preparation of client decks.</li>
-  </ul>
+    <section class="highlights">
+      <h2>Career Highlights</h2>
+      <ul>
+        <li>National Semi-Finalist (Top 10%) at Ken Case Competition, formulating $1B Quick Commerce strategy.</li>
+        <li>Certified by McKinsey Forward in problem-solving, adaptability, and impactful communication.</li>
+        <li>Enhanced operational efficiency at PwC by streamlining Oracle HCM processes for enterprise clients.</li>
+        <li>Led the Book Club at BITSoM, driving culture and engagement among 150+ students.</li>
+      </ul>
+    </section>
 
-  <h3>Cygnius Consulting – Business Analyst Intern <span class="meta">Apr – Jun 2025</span></h3>
-  <ul>
-    <li>Built AI-driven GTM prompts scaling personalized outreach to 800+ prospects/month.</li>
-    <li>Conducted global entity setup cost-benefit analysis, projected to boost margins by 25%.</li>
-  </ul>
+    <section class="section">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>MBA – Finance & Investing, Leadership & Strategy <span class="org">| BITSoM, Mumbai</span></h3>
+        <p>2024 – 2026</p>
+      </div>
+      <div class="edu-item">
+        <h3>B.Tech – Electrical & Electronics (Minor: CS) <span class="org">| PES University, Bangalore</span></h3>
+        <p>2018 – 2022 | GPA: 8.04/10</p>
+      </div>
+      <div class="edu-item">
+        <h3>12th Grade <span class="org">| AECS Magnolia Maaruti PU College</span></h3>
+        <p>2018 | 86.16%</p>
+      </div>
+      <div class="edu-item">
+        <h3>10th Grade <span class="org">| Sri Kumaran Children’s Home</span></h3>
+        <p>2016 | GPA: 9.2/10</p>
+      </div>
+    </section>
 
-  <h2>Leadership & Achievements</h2>
-  <ul>
-    <li>President, Book Club – Led 18+ member team driving recruitment and cultural events.</li>
-    <li>National Semi-Finalist (Top 10%), Ken Case Competition (2025).</li>
-    <li>Certified in problem-solving & digital fluency – McKinsey Forward (2025).</li>
-  </ul>
+    <section class="section">
+      <h2>Work Experience</h2>
+      <div class="exp-item">
+        <p class="role">Associate, Technology Consulting – <span class="org">PwC India</span> (Jul 2022 – Apr 2024)</p>
+        <ul>
+          <li>Developed Oracle HCM reports using OTBI, enabling seamless access to enterprise HR data.</li>
+          <li>Resolved critical HR process issues, improving recruitment, absence, and timesheet compliance.</li>
+          <li>Conducted client training sessions, improving learning outcomes and L&D independence.</li>
+          <li>Supported business development via market research on 200+ prospective clients.</li>
+        </ul>
+      </div>
+    </section>
 
-  <h2>Skills & Certifications</h2>
-  <ul>
-    <li>Programming: Python, C++, SQL</li>
-    <li>Microsoft Azure AI 900 | Oracle HCM Training | Quantitative Methods (Harvard)</li>
-  </ul>
+    <section class="section">
+      <h2>Internships</h2>
+      <div class="exp-item">
+        <p class="role">Business Analyst Intern – <span class="org">Cygnius Consulting</span> (Apr 2025 – Jun 2025)</p>
+        <ul>
+          <li>Built 26+ AI prompts to scale hyper-personalized outreach, improving engagement rates by 33%.</li>
+          <li>Optimized international entity setup via cost-benefit analysis across 11 geographies.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <p class="role">Intern – <span class="org">L&T Infotech</span> (Aug 2021 – Dec 2021)</p>
+        <ul>
+          <li>Developed backend modules using Python, Django, and MongoDB.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <p class="role">Intern – <span class="org">Esyasoft Technologies</span> (Jul – Aug 2019)</p>
+        <ul>
+          <li>Worked in Smart Grid domain, supporting product enhancement and testing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Leadership & Activities</h2>
+      <ul>
+        <li>President, Book Club – Led 18+ member team, driving strategy and cultural initiatives.</li>
+        <li>Member, DEI Club – Advocated for mental health and inclusive community engagement.</li>
+        <li>IAYP Silver & Bronze Award (Duke of Edinburgh) – Demonstrated resilience and leadership through service & adventure projects.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Certifications & Skills</h2>
+      <ul>
+        <li>Microsoft Azure AI 900 (2023), Quantitative Methods (HBP, 2024), Oracle Training (PwC, 2022)</li>
+        <li>Programming: Python, C++, C, SQL</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
