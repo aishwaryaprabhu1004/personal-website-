@@ -5,88 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aishwarya Prabhu - Portfolio</title>
   <style>
+    /* ===== Global Styles ===== */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f8fb;
-      color: #222;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
     }
-    header {
-      background: #003366;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      margin-top: 0;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 10px 0 0;
-      font-size: 1.1rem;
-    }
-    nav {
-      background: #002244;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
+    a {
       text-decoration: none;
+      color: inherit;
+      transition: 0.3s;
+    }
+    ul { list-style: none; padding: 0; }
+    
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #003366, #005f73);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; opacity: 0.9; }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: #00bcd4;
+      color: #fff;
       font-weight: 500;
+      transition: 0.3s;
     }
-    nav a:hover {
-      color: #00bcd4;
+    .btn:hover { background: #008c9e; }
+
+    /* ===== Navbar ===== */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+      z-index: 1000;
     }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+    nav a { font-weight: 500; color: #003366; }
+    nav a:hover { color: #00bcd4; }
+
+    /* ===== Sections ===== */
     .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
     }
-    section {
-      margin-bottom: 50px;
-    }
+    section { margin-bottom: 70px; }
     h2 {
-      color: #003366;
-      border-left: 5px solid #00bcd4;
-      padding-left: 10px;
+      font-size: 1.8rem;
       margin-bottom: 20px;
+      color: #003366;
+      border-left: 6px solid #00bcd4;
+      padding-left: 12px;
     }
+
+    /* ===== About Section ===== */
     .about {
-      background: #e9f5f7;
-      padding: 20px;
-      border-radius: 8px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      background: #f0f8fb;
+      padding: 25px;
+      border-radius: 12px;
+      animation: fadeIn 1s ease-in;
     }
-    .highlights ul {
-      list-style: '✔ ';
+
+    /* ===== Highlights Section ===== */
+    .highlights ul li {
+      margin-bottom: 12px;
       padding-left: 20px;
-    }
-    .timeline {
-      border-left: 3px solid #003366;
-      margin-left: 20px;
-      padding-left: 20px;
-    }
-    .timeline-item {
-      margin-bottom: 25px;
       position: relative;
     }
+    .highlights ul li::before {
+      content: '✔';
+      color: #00bcd4;
+      position: absolute;
+      left: 0;
+    }
+
+    /* ===== Timeline Experience ===== */
+    .timeline {
+      position: relative;
+      border-left: 3px solid #003366;
+      padding-left: 25px;
+    }
+    .timeline-item {
+      margin-bottom: 30px;
+      animation: slideUp 0.8s ease-in;
+    }
+    .timeline-item h3 { margin-bottom: 5px; }
+    .timeline-item p { margin: 5px 0; color: #555; }
+    .timeline-item ul li { margin-bottom: 8px; }
     .timeline-item::before {
       content: '';
       position: absolute;
-      left: -12px;
-      top: 5px;
-      width: 12px;
-      height: 12px;
+      left: -11px;
       background: #00bcd4;
+      border: 3px solid #fff;
+      width: 16px;
+      height: 16px;
       border-radius: 50%;
+      top: 8px;
     }
+
+    /* ===== Footer ===== */
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background: #003366;
       color: #fff;
+      font-size: 0.9rem;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      nav ul { flex-wrap: wrap; gap: 15px; }
+      header h1 { font-size: 2rem; }
+      .container { margin: 30px auto; }
     }
   </style>
 </head>
@@ -94,21 +158,24 @@
   <header>
     <h1>Aishwarya Prabhu</h1>
     <p>MBA Candidate | Technology Consultant | Aspiring Strategy Leader</p>
+    <a href="#contact" class="btn">Get in Touch</a>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
   <div class="container">
     <section id="about">
       <h2>About Me</h2>
       <div class="about">
-        <p>I am an MBA candidate at BITSoM, specializing in Finance & Strategy, with prior experience at PwC in technology consulting. I am passionate about solving complex business problems, driving digital transformation, and creating measurable impact. Beyond work, I thrive on leadership roles, reading, and building inclusive communities.</p>
+        <p>I am an MBA candidate at BITSoM with a background in technology consulting at PwC. Passionate about strategy, digital transformation, and business problem-solving. I bring a mix of analytical rigor, leadership, and creativity, backed by global competition achievements and leadership roles. Outside work, I’m an avid reader and active community builder.</p>
       </div>
     </section>
 
@@ -116,10 +183,10 @@
       <h2>Career Highlights</h2>
       <div class="highlights">
         <ul>
-          <li>National Semi-Finalist (Top 10%) at Ken Case Competition – $1B Quick Commerce strategy.</li>
-          <li>McKinsey Forward certified in structured problem-solving, adaptability, and communication.</li>
-          <li>Delivered digital transformation and HR process improvements at PwC India.</li>
-          <li>Elected President of Book Club at BITSoM, leading 18+ members.</li>
+          <li>Top 10% National Semi-Finalist, Ken Case Competition – $1B Quick Commerce strategy.</li>
+          <li>McKinsey Forward certified in problem-solving, adaptability & communication.</li>
+          <li>Drove HR digital transformation & process optimization at PwC India.</li>
+          <li>President of Book Club at BITSoM, leading a team of 18+ members.</li>
         </ul>
       </div>
     </section>
@@ -131,24 +198,24 @@
           <h3>PwC India | Associate, Technology Consulting</h3>
           <p><em>Jul 2022 – Apr 2024</em></p>
           <ul>
-            <li>Designed Oracle HCM reports enabling seamless access to HR data.</li>
-            <li>Resolved key HR process issues and streamlined timesheet compliance.</li>
-            <li>Delivered client training sessions to enhance L&D capabilities.</li>
-            <li>Conducted market research on 200+ prospective clients for business development.</li>
+            <li>Developed Oracle HCM reports enabling seamless access to enterprise HR data.</li>
+            <li>Resolved HR process issues across recruitment, absence & timesheet compliance.</li>
+            <li>Conducted client training, enhancing independent L&D management.</li>
+            <li>Researched 200+ prospective clients to support business development.</li>
           </ul>
         </div>
         <div class="timeline-item">
           <h3>Cygnius Consulting | Business Analyst Intern</h3>
           <p><em>Apr 2025 – Jun 2025</em></p>
           <ul>
-            <li>Developed AI prompts to scale LinkedIn outreach, achieving 33% engagement rates.</li>
-            <li>Optimized international entity setup across 11 geographies, boosting margins.</li>
+            <li>Built AI-driven outreach engine, scaling 800+ LinkedIn prospects/month.</li>
+            <li>Optimized global entity setup across 11 geographies, boosting ROI by 25%.</li>
           </ul>
         </div>
         <div class="timeline-item">
           <h3>L&T Infotech | Intern</h3>
           <p><em>Aug 2021 – Dec 2021</em></p>
-          <p>Built backend modules using Python, Django, and MongoDB.</p>
+          <p>Developed backend modules using Python, Django, and MongoDB.</p>
         </div>
       </div>
     </section>
@@ -168,7 +235,7 @@
       <ul>
         <li>Programming: Python, C++, C, SQL</li>
         <li>Microsoft Azure AI 900 (2023), Oracle Training (PwC, 2022), Quantitative Methods (HBP, 2024)</li>
-        <li>Expertise: Digital Transformation, Market Research, Problem Solving</li>
+        <li>Strengths: Digital Transformation, Market Research, Problem Solving, Leadership</li>
       </ul>
     </section>
 
@@ -177,11 +244,12 @@
       <p><strong>Email:</strong> your.email@example.com</p>
       <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
       <p><strong>GitHub:</strong> github.com/yourprofile</p>
+      <a href="#" class="btn">Download CV</a>
     </section>
   </div>
 
   <footer>
-    <p>© 2025 Aishwarya Prabhu | Designed with passion</p>
+    <p>© 2025 Aishwarya Prabhu | Designed with elegance & precision</p>
   </footer>
 </body>
 </html>
