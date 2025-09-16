@@ -3,167 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aishwarya Prabhu - Resume</title>
+  <title>Aishwarya Prabhu - Portfolio</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      background: #f5f8fb;
       color: #222;
-      background: #f9f9fb;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      background: #002244;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #00bcd4;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 20px;
     }
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 5px;
+    section {
+      margin-bottom: 50px;
     }
     h2 {
-      font-size: 1.4rem;
-      margin-top: 30px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 6px;
       color: #003366;
+      border-left: 5px solid #00bcd4;
+      padding-left: 10px;
+      margin-bottom: 20px;
     }
-    h3 {
-      font-size: 1.1rem;
-      margin-bottom: 5px;
-      color: #333;
-    }
-    p, li {
-      font-size: 0.95rem;
-      color: #444;
-    }
-    ul {
-      margin: 8px 0 15px 20px;
-    }
-    .section {
-      margin-bottom: 25px;
-    }
-    .summary {
-      background: #f0f4fa;
-      padding: 15px 20px;
-      border-left: 4px solid #003366;
+    .about {
+      background: #e9f5f7;
+      padding: 20px;
       border-radius: 8px;
-      margin-bottom: 25px;
     }
     .highlights ul {
-      list-style: '★ ';
-      padding-left: 18px;
+      list-style: '✔ ';
+      padding-left: 20px;
     }
-    .edu-item, .exp-item {
-      margin-bottom: 15px;
+    .timeline {
+      border-left: 3px solid #003366;
+      margin-left: 20px;
+      padding-left: 20px;
     }
-    .role {
-      font-weight: bold;
-      color: #222;
+    .timeline-item {
+      margin-bottom: 25px;
+      position: relative;
     }
-    .org {
-      color: #003366;
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: #00bcd4;
+      border-radius: 50%;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003366;
+      color: #fff;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Aishwarya Prabhu</h1>
+    <p>MBA Candidate | Technology Consultant | Aspiring Strategy Leader</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <div class="container">
-    <header>
-      <h1>Aishwarya Prabhu</h1>
-      <p><strong>Email:</strong> your.email@example.com | <strong>LinkedIn:</strong> linkedin.com/in/yourprofile | <strong>GitHub:</strong> github.com/yourprofile</p>
-    </header>
-
-    <section class="summary">
-      <h2>Professional Summary</h2>
-      <p>MBA candidate at BITSoM with a background in technology consulting and strategy. Experienced in digital transformation, market analysis, and AI-driven business solutions. Recognized for problem-solving, leadership, and delivering measurable business impact across consulting and corporate settings.</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <p>I am an MBA candidate at BITSoM, specializing in Finance & Strategy, with prior experience at PwC in technology consulting. I am passionate about solving complex business problems, driving digital transformation, and creating measurable impact. Beyond work, I thrive on leadership roles, reading, and building inclusive communities.</p>
+      </div>
     </section>
 
-    <section class="highlights">
+    <section id="highlights">
       <h2>Career Highlights</h2>
-      <ul>
-        <li>National Semi-Finalist (Top 10%) at Ken Case Competition, formulating $1B Quick Commerce strategy.</li>
-        <li>Certified by McKinsey Forward in problem-solving, adaptability, and impactful communication.</li>
-        <li>Enhanced operational efficiency at PwC by streamlining Oracle HCM processes for enterprise clients.</li>
-        <li>Led the Book Club at BITSoM, driving culture and engagement among 150+ students.</li>
-      </ul>
+      <div class="highlights">
+        <ul>
+          <li>National Semi-Finalist (Top 10%) at Ken Case Competition – $1B Quick Commerce strategy.</li>
+          <li>McKinsey Forward certified in structured problem-solving, adaptability, and communication.</li>
+          <li>Delivered digital transformation and HR process improvements at PwC India.</li>
+          <li>Elected President of Book Club at BITSoM, leading 18+ members.</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="section">
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>PwC India | Associate, Technology Consulting</h3>
+          <p><em>Jul 2022 – Apr 2024</em></p>
+          <ul>
+            <li>Designed Oracle HCM reports enabling seamless access to HR data.</li>
+            <li>Resolved key HR process issues and streamlined timesheet compliance.</li>
+            <li>Delivered client training sessions to enhance L&D capabilities.</li>
+            <li>Conducted market research on 200+ prospective clients for business development.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>Cygnius Consulting | Business Analyst Intern</h3>
+          <p><em>Apr 2025 – Jun 2025</em></p>
+          <ul>
+            <li>Developed AI prompts to scale LinkedIn outreach, achieving 33% engagement rates.</li>
+            <li>Optimized international entity setup across 11 geographies, boosting margins.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>L&T Infotech | Intern</h3>
+          <p><em>Aug 2021 – Dec 2021</em></p>
+          <p>Built backend modules using Python, Django, and MongoDB.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
       <h2>Education</h2>
-      <div class="edu-item">
-        <h3>MBA – Finance & Investing, Leadership & Strategy <span class="org">| BITSoM, Mumbai</span></h3>
-        <p>2024 – 2026</p>
-      </div>
-      <div class="edu-item">
-        <h3>B.Tech – Electrical & Electronics (Minor: CS) <span class="org">| PES University, Bangalore</span></h3>
-        <p>2018 – 2022 | GPA: 8.04/10</p>
-      </div>
-      <div class="edu-item">
-        <h3>12th Grade <span class="org">| AECS Magnolia Maaruti PU College</span></h3>
-        <p>2018 | 86.16%</p>
-      </div>
-      <div class="edu-item">
-        <h3>10th Grade <span class="org">| Sri Kumaran Children’s Home</span></h3>
-        <p>2016 | GPA: 9.2/10</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Work Experience</h2>
-      <div class="exp-item">
-        <p class="role">Associate, Technology Consulting – <span class="org">PwC India</span> (Jul 2022 – Apr 2024)</p>
-        <ul>
-          <li>Developed Oracle HCM reports using OTBI, enabling seamless access to enterprise HR data.</li>
-          <li>Resolved critical HR process issues, improving recruitment, absence, and timesheet compliance.</li>
-          <li>Conducted client training sessions, improving learning outcomes and L&D independence.</li>
-          <li>Supported business development via market research on 200+ prospective clients.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Internships</h2>
-      <div class="exp-item">
-        <p class="role">Business Analyst Intern – <span class="org">Cygnius Consulting</span> (Apr 2025 – Jun 2025)</p>
-        <ul>
-          <li>Built 26+ AI prompts to scale hyper-personalized outreach, improving engagement rates by 33%.</li>
-          <li>Optimized international entity setup via cost-benefit analysis across 11 geographies.</li>
-        </ul>
-      </div>
-      <div class="exp-item">
-        <p class="role">Intern – <span class="org">L&T Infotech</span> (Aug 2021 – Dec 2021)</p>
-        <ul>
-          <li>Developed backend modules using Python, Django, and MongoDB.</li>
-        </ul>
-      </div>
-      <div class="exp-item">
-        <p class="role">Intern – <span class="org">Esyasoft Technologies</span> (Jul – Aug 2019)</p>
-        <ul>
-          <li>Worked in Smart Grid domain, supporting product enhancement and testing.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Leadership & Activities</h2>
       <ul>
-        <li>President, Book Club – Led 18+ member team, driving strategy and cultural initiatives.</li>
-        <li>Member, DEI Club – Advocated for mental health and inclusive community engagement.</li>
-        <li>IAYP Silver & Bronze Award (Duke of Edinburgh) – Demonstrated resilience and leadership through service & adventure projects.</li>
+        <li><strong>MBA</strong>, Finance & Strategy – BITSoM, Mumbai (2024 – 2026)</li>
+        <li><strong>B.Tech</strong>, Electrical & Electronics (Minor: CS) – PES University, Bangalore (2018 – 2022)</li>
+        <li>12th Grade – AECS Magnolia Maaruti PU College (2018) | 86.16%</li>
+        <li>10th Grade – Sri Kumaran Children’s Home (2016) | GPA: 9.2/10</li>
       </ul>
     </section>
 
-    <section class="section">
-      <h2>Certifications & Skills</h2>
+    <section id="skills">
+      <h2>Skills & Certifications</h2>
       <ul>
-        <li>Microsoft Azure AI 900 (2023), Quantitative Methods (HBP, 2024), Oracle Training (PwC, 2022)</li>
         <li>Programming: Python, C++, C, SQL</li>
+        <li>Microsoft Azure AI 900 (2023), Oracle Training (PwC, 2022), Quantitative Methods (HBP, 2024)</li>
+        <li>Expertise: Digital Transformation, Market Research, Problem Solving</li>
       </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> your.email@example.com</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+      <p><strong>GitHub:</strong> github.com/yourprofile</p>
     </section>
   </div>
+
+  <footer>
+    <p>© 2025 Aishwarya Prabhu | Designed with passion</p>
+  </footer>
 </body>
 </html>
